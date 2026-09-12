@@ -20,7 +20,7 @@ form.addEventListener("submit", e => {
   const message = document.getElementById("message").value.trim();
 
   // Replace this number with the real gym WhatsApp number before publishing.
-  const whatsappNumber = "910000000000";
+  const whatsappNumber = "+91 96917 58411";
   const text = `Hello Workout Zone Gym!%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AGoal: ${encodeURIComponent(goal)}%0AMessage: ${encodeURIComponent(message)}`;
   status.textContent = "Opening WhatsApp for your enquiry...";
   window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
@@ -28,6 +28,6 @@ form.addEventListener("submit", e => {
 
 document.getElementById("whatsappBtn").addEventListener("click", e => {
   e.preventDefault();
-  const whatsappNumber = "910000000000"; // CHANGE THIS
+  const whatsappNumber = "+91 96917 58411"; // CHANGE THIS
   window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hello Workout Zone Gym! I want to know more about joining the gym.")}`, "_blank");
 });
